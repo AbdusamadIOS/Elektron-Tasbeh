@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Elektron_Tasbeh" customModuleProvider="target">
+            <connections>
+                <outlet property="addBtn" destination="zl1-9Y-7sd" id="WQU-D2-Hwv"/>
+                <outlet property="raqamLbl" destination="Zoe-lY-bLF" id="Teo-hO-eu6"/>
+                <outlet property="resetBtn" destination="fs1-pw-2cc" id="qy7-hd-7jg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="74C-gY-dHs">
+                    <rect key="frame" x="1" y="60" width="393" height="757"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-2I-9FK">
+                    <rect key="frame" x="100" y="320" width="195" height="83"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoe-lY-bLF">
+                            <rect key="frame" x="3" y="3" width="189" height="77"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="52"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.58418422940000003" green="0.61989283559999997" blue="0.59246438739999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Zoe-lY-bLF" firstAttribute="leading" secondItem="r3a-2I-9FK" secondAttribute="leading" constant="3" id="6Mz-n7-kUS"/>
+                        <constraint firstAttribute="trailing" secondItem="Zoe-lY-bLF" secondAttribute="trailing" constant="3" id="br7-ez-BYT"/>
+                        <constraint firstItem="Zoe-lY-bLF" firstAttribute="top" secondItem="r3a-2I-9FK" secondAttribute="top" constant="3" id="cM3-8m-EnS"/>
+                        <constraint firstAttribute="bottom" secondItem="Zoe-lY-bLF" secondAttribute="bottom" constant="3" id="xCb-Ff-Loh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl1-9Y-7sd">
+                    <rect key="frame" x="141" y="496" width="108" height="118"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="addPressBtn:" destination="-1" eventType="touchUpInside" id="KPi-tO-6Fm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs1-pw-2cc">
+                    <rect key="frame" x="241" y="453" width="54" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="removeBtn:" destination="-1" eventType="touchUpInside" id="wp0-IY-UMv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.025163245575186653" green="0.14609585278659198" blue="0.1915443497474747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zl1-9Y-7sd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="141" id="34Q-Ij-nUL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fs1-pw-2cc" secondAttribute="trailing" constant="98" id="AQF-Ie-aQQ"/>
+                <constraint firstItem="74C-gY-dHs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="1" id="CGY-4Z-Eqp"/>
+                <constraint firstItem="r3a-2I-9FK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="261" id="EaK-ov-WGX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r3a-2I-9FK" secondAttribute="trailing" constant="98" id="EfP-6N-CNX"/>
+                <constraint firstItem="zl1-9Y-7sd" firstAttribute="top" secondItem="r3a-2I-9FK" secondAttribute="bottom" constant="93" id="GJt-dn-gmy"/>
+                <constraint firstItem="74C-gY-dHs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="1" id="Mgw-qG-Q7Q"/>
+                <constraint firstItem="zl1-9Y-7sd" firstAttribute="top" secondItem="fs1-pw-2cc" secondAttribute="bottom" constant="8" symbolic="YES" id="YL8-l2-6Pr"/>
+                <constraint firstItem="fs1-pw-2cc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="241" id="c6j-Tm-7FZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zl1-9Y-7sd" secondAttribute="bottom" constant="204" id="cha-Uh-zaE"/>
+                <constraint firstItem="74C-gY-dHs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="1" id="fr1-w1-gGD"/>
+                <constraint firstItem="fs1-pw-2cc" firstAttribute="top" secondItem="r3a-2I-9FK" secondAttribute="bottom" constant="50" id="iQm-q0-D09"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r3a-2I-9FK" secondAttribute="bottom" constant="415" id="jgs-ND-agI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zl1-9Y-7sd" secondAttribute="trailing" constant="144" id="ndX-E7-QVT"/>
+                <constraint firstItem="r3a-2I-9FK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="ohk-qy-Uxg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="74C-gY-dHs" secondAttribute="bottom" constant="1" id="wje-KV-dwY"/>
+            </constraints>
+            <point key="canvasLocation" x="113.74045801526717" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image 1" width="724" height="1210"/>
+    </resources>
+</document>
