@@ -17,8 +17,9 @@ var window: UIWindow?
         window = UIWindow()
 
         let vc = MainVC(nibName: "MainVC", bundle: nil)
+        let nav = UINavigationController(rootViewController: vc)
         
-        window?.rootViewController = vc
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
 
         return true
